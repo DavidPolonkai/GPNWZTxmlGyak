@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+
+
+<xs:element name="orarend">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ora" type="oraType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+    <xs:complexType name="oraType">
+        <xs:sequence>
+            <xs:element name="targy" type="xs:string"/>
+            <xs:element name="idopont" type="idopontType"/>
+            <xs:element name="helyszin" type="xs:string"/>
+            <xs:element name="oktato" type="xs:string"/>
+            <xs:element name="szak" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="tipus" type="oraTipusType" default="előadás"/>
+    </xs:complexType>
+
+    <xs:simpleType name="oraTipusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="előadás"/>
+            <xs:enumeration value="gyakorlat"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="idopontType">
+        <xs:sequence>
+            <xs:element name="nap" type="napType"/>
+            <xs:element name="tol" type="xs:int"/>
+            <xs:element name="ig" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="napType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="hétfő"/>
+            <xs:enumeration value="kedd"/>
+            <xs:enumeration value="szerda"/>
+            <xs:enumeration value="csütörtök"/>
+            <xs:enumeration value="péntek"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
