@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE mozi SYSTEM "mozi1.dtd">-->
+
+<mozi
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="mozi1.xsd">
+
+	<film id="1" mufaj="horror">
+		<rendezo rid="1" nev="alex"/>
+		<szinesz sid="2" nev="Madison Ivy"/>
+		<iro iid="1"/>
+	</film>
+	<film id="2" mufaj="scifi">
+		<rendezo rid="3" nev="Gabriel"/>
+		<szinesz sid="2" nev="Madison Ivy"/>
+		<iro iid="2"/>
+	</film>
+
+</mozi>
