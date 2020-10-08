@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nevjegykartya.xsd">
+    <nevjegykartya id="1">
+        <nev>Sándor Sámuel</nev>
+        <beosztas>Vezető</beosztas>
+        <email>email@emaiol.com</email>
+        <telefonszam korzet="06">123123123</telefonszam>
+        <ceg>
+            <nev>Alma.bt</nev>
+            <weblap>www.alma.hu</weblap>
+            <telefonszam korzet="06">124121233</telefonszam>
+            <cim>
+                <iranyitoszam>3600</iranyitoszam>
+                <varos>Ózd</varos>
+                <utca>Fő út</utca>
+                <hazszam>1</hazszam>
+            </cim>
+        </ceg>
+    </nevjegykartya>
+
+    <nevjegykartya id="2">
+        <nev>Dell Dóra</nev>
+        <beosztas>Billenytűzettervező mérnökhelyettes</beosztas>
+        <email>email@bil.com</email>
+        <telefonszam korzet="06">324234</telefonszam>
+        <ceg>
+            <nev>Dejo.bt</nev>
+            <weblap>www.dejo.hu</weblap>
+            <telefonszam korzet="06">12413</telefonszam>
+            <cim>
+                <iranyitoszam>2000</iranyitoszam>
+                <varos>Város</varos>
+                <utca>Mellék út</utca>
+                <hazszam>3</hazszam>
+            </cim>
+        </ceg>
+    </nevjegykartya>
+</nevjegykartyak>
