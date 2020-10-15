@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<konyv isbn="0823123" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="kutyavilag.xsd">
+    <cim>Kutyavilag</cim>
+    <szerzo>Charles M. Schulz</szerzo>
+    <szereplo>
+        <nev>Snoopy</nev>
+        <baratja>Peppermint Patty</baratja>
+        <szuletett>1950-10-04</szuletett>
+        <jellemzes>exrovertált beagle</jellemzes>
+    </szereplo>
+    <szereplo>
+        <nev>Peppermint Patty</nev>
+        <szuletett>1966-08-22</szuletett>
+        <jellemzes>kövér, vakmerő leányzó</jellemzes>
+    </szereplo>
+</konyv>

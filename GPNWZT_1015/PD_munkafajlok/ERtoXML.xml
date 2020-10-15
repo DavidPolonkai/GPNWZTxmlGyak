@@ -1,0 +1,20 @@
+<fo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ERtoXSD.xsd">
+    <A A_id="1">
+        <B>Alma</B>
+        <C>Korte</C>
+        <X>Banán</X>
+        <Y>Szilva</Y>
+    </A>
+    <B B_id="1">
+        <X></X>
+        <Y></Y>
+    </B>
+    <C C_id="1">
+        <b></b>
+    </C>
+
+    <AB ab_a="1" ab_b="1">
+        <kapcsolattulajd>alma</kapcsolattulajd>
+    </AB>
+
+</fo>

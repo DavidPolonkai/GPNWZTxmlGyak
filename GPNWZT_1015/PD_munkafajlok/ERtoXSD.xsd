@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="A" maxOccurs="unbounded">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="B" type="xs:string"/>
+                            <xs:element name="C" type="xs:string"/>
+                            <xs:element name="X" type="xs:string"/>
+                            <xs:element name="Y" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="A_id" type="xs:int"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="B" maxOccurs="unbounded">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="X" type="xs:string"/>
+                            <xs:element name="Y" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="B_id" type="xs:int"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="C" maxOccurs="unbounded">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="b" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="C_id" type="xs:int"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="AB">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="kapcsolattulajd" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="ab_a" type="xs:int"/>
+                        <xs:attribute name="ab_b" type="xs:int"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="A_AB">
+            <xs:selector xpath="./A"/>
+            <xs:field xpath="@A_id"></xs:field>
+        </xs:key>
+        <xs:key name="B_AB">
+            <xs:selector xpath="./B"/>
+            <xs:field xpath="@B_id"></xs:field>
+        </xs:key>
+        <xs:key name="B_C">
+            <xs:selector xpath="./B"></xs:selector>
+            <xs:field xpath="@B_id"></xs:field>
+        </xs:key>
+        <xs:keyref name="K23" refer="B_C">
+            <xs:selector xpath="./C"></xs:selector>
+            <xs:field xpath="@C_id"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="A_AB" name="K11">
+            <xs:selector xpath="./AB"></xs:selector>
+            <xs:field xpath="@ab_a"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="B_AB" name="K21">
+            <xs:selector xpath="./AB"></xs:selector>
+            <xs:field xpath="@ab_b"></xs:field>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
