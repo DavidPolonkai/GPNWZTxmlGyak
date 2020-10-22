@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE cats SYSTEM "cats.dtd">-->
+
+
+<!--<cats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cats.xsd">-->
+<cats>
+    <cat id="1">
+        <name>Kokusz</name>
+        <age>3</age>
+        <breed>Perzsa</breed>
+    </cat>
+    <cat id="2">
+        <name>Napsugar</name>
+        <age>2</age>
+        <breed>Sziama</breed>
+    </cat>
+    <cat id="3">
+        <name>Lucifer</name>
+        <age>3</age>
+        <breed>Oroszkek</breed>
+    </cat>
+</cats>

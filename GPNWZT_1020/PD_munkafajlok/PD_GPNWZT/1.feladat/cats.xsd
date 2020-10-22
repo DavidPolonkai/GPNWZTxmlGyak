@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cats">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cat" type="catType" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="catType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="age" type="xs:int" />
+            <xs:element name="breed" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:int"></xs:attribute>
+    </xs:complexType>
+</xs:schema>
