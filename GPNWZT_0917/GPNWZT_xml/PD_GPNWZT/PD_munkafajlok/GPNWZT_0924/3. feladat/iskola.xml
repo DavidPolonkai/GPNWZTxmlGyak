@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<iskola>
+	<tanar kod="1">
+		<nev>Tanar Első</nev>
+		<szak>Matematika</szak>
+	</tanar>
+	<tanar kod="2">
+		<nev>Tanar Masodik</nev>
+		<szak>Angol</szak>
+	</tanar>
+	
+	<tantargy kod="1" oktato="1">
+		<tnev>Analízis 1</tnev>
+		<osztaly>2. évfolyam</osztaly>
+	</tantargy>
+	
+	<tantargy kod="2" oktato="2">
+		<tnev>Angol kezdő</tnev>
+		<osztaly>2. évfolyam</osztaly>
+	</tantargy>
+</iskola>

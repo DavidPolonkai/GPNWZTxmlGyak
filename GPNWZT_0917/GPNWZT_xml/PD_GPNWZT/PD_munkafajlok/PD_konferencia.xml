@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+	<cim>konferencia 1</cim>
+	
+	<hallgatok>
+		<hallgató>
+			<nev>Hallgató András</nev>
+			<lakcim>Miskolc</lakcim>
+		</hallgató>		
+		<hallgató>
+			<nev>Hallgató Dorottya</nev>
+			<lakcim>Ózd</lakcim>
+		</hallgató>
+	</hallgatok>
+	
+	<helyszin>A/3 és A/4 között III. előadó</helyszin>
+	
+	<eloado>
+		<nev>Előadó Elemér</nev>
+		<adoszam>0000103124</adoszam>
+		<lakcim>Miskolc</lakcim>
+	</eloado>
+	
+	<datum>2020.04.23.</datum>
+	
+</konferencia>

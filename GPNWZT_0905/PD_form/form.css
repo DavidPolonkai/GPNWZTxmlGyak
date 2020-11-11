@@ -1,0 +1,13 @@
+body{
+	background-color:#444444;
+	color: black;
+}
+
+form{
+	display: block;
+	background-color: #888888;
+	width: 50%;
+  margin-left: auto;
+	margin-right: auto;
+
+}

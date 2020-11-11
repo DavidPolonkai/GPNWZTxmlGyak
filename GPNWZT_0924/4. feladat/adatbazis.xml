@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adatbazis>
+	<dolgozo kod="1">
+		<nev>Nev Egy</nev>
+		<fizetes>100000</fizetes>
+	</dolgozo>
+	<dolgozo kod="2">
+		<nev>Nev Ketto</nev>
+		<fizetes>200000</fizetes>
+	</dolgozo>
+	<dolgozo kod="3">
+		<nev>Nev Harom</nev>
+		<fizetes>300000</fizetes>
+	</dolgozo>
+</adatbazis>

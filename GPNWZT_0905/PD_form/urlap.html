@@ -1,0 +1,55 @@
+<!DOCTYPE HTML5>
+
+<datalist id="fruits">
+ 
+</datalist>
+
+<meta charset="utf-8">
+<html>
+
+<head>
+<link rel="stylesheet" href="form.css">
+<title>Űrlap</title>
+</head>
+<body>
+<section id="tartalom" class="urlap">
+
+  <form action="feldolgozo.php" method="post">
+   <label for="name">Név:</label><br>
+   <input type="text" name="name" value="Írd be a neved">
+   <br>
+   <label for="pin">PIN kód:</label><br>
+   <input type="password" id="pin" name="pin" value="Írd be a PIN kódod">
+   <br>
+   <label for="fav_fruit">Kedvenc Gyümölcs:</label><br>
+   <input list="fruit" id="fav_fruit" name="fav_fruit" >
+   <datalist id="fruit">
+    <option value="alma">
+    <option value="körte">
+    <option value="szilva">
+    <option value="szőlő"> 
+    <option value="meggy"> 
+    <option value="ribizli"> 
+    <option value="áfonya">
+   </datalist>
+
+
+
+   <br>
+   <label for="age">Életkor:</label><br>
+   <input type="number" id="age" name="age" min="1" max="110">
+   <br>
+   <label for="footsize">Lábméret:</label><br>
+   <input type="number" id="footsize" name="footsize" min="20" max="50">
+   <br>
+   <label for="confidence">Önbizalom:</label><br>
+   <input type="range" id="confidence" name="confidence" min="0" max="100">
+   <br>
+
+  <input type="submit" value="ELKÜLDÉS" />
+</form> 
+
+</section>
+</body>
+
+</html>
