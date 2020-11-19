@@ -1,0 +1,63 @@
+<html>
+    <meta charset="UTF-8">
+    <style>
+                body{
+                margin: 0px;
+                background-color: black;
+                color: white;
+                }
+                table,th,tr,td{
+                border-collapse: collapse;
+                border: 2px solid gray;
+                }
+                table{
+                margin-left: auto;
+                margin-right: auto;
+                min-width: 80%;
+                }
+                h1{
+                text-align: center;
+                }
+            </style>
+    <body>
+        <h1>Emberek</h1>
+        <table>
+            <tr>
+                <th>tipus</th><th>t&aacute;rgy</th><th>nap</th><th>t&oacute;l</th><th>ig</th><th>helysz&iacute;n</th><th>oktat&oacute;</th><th>szak</th>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>Szoftvertesztel&eacute;s</td><td>h&eacute;tfő</td><td>8</td><td>12</td><td>in/103</td><td>Tompa Tam&aacute;s</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>Mesters&eacute;ges intelligencia</td><td>h&eacute;tfő</td><td>12</td><td>15</td><td>XXX. előad&oacute;</td><td>Dr. Dud&aacute;s L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>WEB technol&oacute;gi&aacute;k</td><td>h&eacute;tfő</td><td>15</td><td>17</td><td>in/103</td><td>Ag&aacute;rdi Anita</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>gyakorlat</td><td>WEB technol&oacute;gi&aacute;k</td><td>h&eacute;tfő</td><td>17</td><td>19</td><td>in/15</td><td>Ag&aacute;rdi Anita</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>WEB-es alkalmaz&aacute;sok Java</td><td>kedd</td><td>10</td><td>12</td><td>in/103</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>Adatkezel&eacute;s XML-ben</td><td>kedd</td><td>12</td><td>14</td><td>XXXVII</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>gyakorlat</td><td>Mesters&eacute;ges intelligencia</td><td>szerda</td><td>11</td><td>12</td><td>in/15</td><td>Dr. Dud&aacute;s L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>előad&aacute;s</td><td>Integr&aacute;lt v&aacute;llalati rendszerek</td><td>szerda</td><td>12</td><td>14</td><td>A1/319</td><td>Dr. Samad Dadvandipour</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>gyakorlat</td><td>Integr&aacute;lt v&aacute;llalati rendszerek</td><td>szerda</td><td>14</td><td>16</td><td>in/15</td><td>Dr. Bikfalvi P&eacute;ter</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>gyakorlat</td><td>WEB-es alkalmaz&aacute;sok Java</td><td>cs&uuml;t&ouml;rt&ouml;k</td><td>10</td><td>12</td><td>in/6</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+            <tr>
+                <td>gyakorlat</td><td>Adatkezel&eacute;s XML-ben</td><td>cs&uuml;t&ouml;rt&ouml;k</td><td>12</td><td>14</td><td>in/103</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinformatikus</td>
+            </tr>
+        </table>
+    </body>
+</html>

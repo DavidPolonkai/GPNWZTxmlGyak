@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="orarend.xsd">
+	<ora id="o1" tipus="előadás">
+		<targy>Szoftvertesztelés</targy>
+		<idopont>
+			<nap>hétfő</nap>
+			<tol>8</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>in/103</helyszin>
+		<oktato>Tompa Tamás</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o2" tipus="előadás">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont>
+			<nap>hétfő</nap>
+			<tol>12</tol>
+			<ig>15</ig>
+		</idopont>
+		<helyszin>XXX. előadó</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o3" tipus="előadás">
+		<targy>WEB technológiák</targy>
+		<idopont>
+			<nap>hétfő</nap>
+			<tol>15</tol>
+			<ig>17</ig>
+		</idopont>
+		<helyszin>in/103</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	
+	<ora id="o4" tipus="gyakorlat">
+		<targy>WEB technológiák</targy>
+		<idopont>
+			<nap>hétfő</nap>
+			<tol>17</tol>
+			<ig>19</ig>
+		</idopont>
+		<helyszin>in/15</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	
+	<ora id="o5" tipus="előadás">
+		<targy>WEB-es alkalmazások Java</targy>
+		<idopont>
+			<nap>kedd</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>in/103</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o6" tipus="előadás">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>XXXVII</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o7" tipus="gyakorlat">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>11</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>in/15</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o8" tipus="előadás">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>A1/319</helyszin>
+		<oktato>Dr. Samad Dadvandipour</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o9" tipus="gyakorlat">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>szerda</nap>
+			<tol>14</tol>
+			<ig>16</ig>
+		</idopont>
+		<helyszin>in/15</helyszin>
+		<oktato>Dr. Bikfalvi Péter</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+	<ora id="o10" tipus="gyakorlat">
+		<targy>WEB-es alkalmazások Java</targy>
+		<idopont>
+			<nap>csütörtök</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>in/6</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+		<ora id="o10" tipus="gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>csütörtök</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>in/103</helyszin>
+		<oktato>Dr. Bednarik László</oktato>
+		<szak>Mérnökinformatikus</szak>
+	</ora>
+	
+
+
+</orarend>
+

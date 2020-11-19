@@ -1,0 +1,33 @@
+<html>
+    <meta charset="UTF-8">
+    <style>
+                body{
+                    margin: 0px;
+                    background-color: black;
+                    color: white;
+                }
+                table,th,tr,td{
+                    border-collapse: collapse;
+                    border: 2px solid gray;
+                }
+                table{
+                    margin-left: auto;
+                    margin-right: auto;
+                    min-width: 80%;
+                }
+                h1{
+                    text-align: center;
+                }
+            </style>
+    <body>
+        <h1>Emberek</h1>
+        <table>
+            <tr>
+                <th>id</th><th>keresztn&eacute;v</th><th>vezet&eacute;kn&eacute;v</th><th>becen&eacute;v</th><th>fizet&eacute;s</th>
+            </tr>
+            <tr>
+                <td>001</td><td>Istvan</td><td>Arvai</td><td>Arva</td><td>600000</td>
+            </tr>
+        </table>
+    </body>
+</html>

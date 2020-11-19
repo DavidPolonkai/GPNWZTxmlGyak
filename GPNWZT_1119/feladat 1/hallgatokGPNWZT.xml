@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<osztaly>
+    <alkalmazott id ="001">
+        <keresztnev>Istvan</keresztnev>
+        <vezeteknev>Arvai</vezeteknev>
+        <becenev>Arva</becenev>
+        <fizetes>600000</fizetes>
+    </alkalmazott>
+</osztaly>
