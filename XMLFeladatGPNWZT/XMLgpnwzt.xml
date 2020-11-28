@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-model href="XMLSchemagpnwzt.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?><rendszer>
+    <beszallitok>
+        <beszallito id="be1">
+            <nev>fa.zrt</nev>
+            <email>fa@fa.hu</email>
+            <telefonszam>0636778988</telefonszam>
+            <cim>
+                <orszag>Magyarország</orszag>
+                <varos>Miskolc</varos>
+                <utca>Jo utca 1</utca>
+                <hazszam>12</hazszam>
+            </cim>
+        </beszallito>
+    </beszallitok>
+    <gyarak>
+        <gyar id="gy1" t_id="t1">
+            <nev>A1</nev>
+            <nagysag>200</nagysag>
+            <varos>Miskolc</varos>
+            <gyartott_mennyiseg>300</gyartott_mennyiseg>
+        </gyar>
+        <gyar id="gy2" t_id="t2">
+            <nev>A2</nev>
+            <nagysag>220</nagysag>
+            <varos>Ózd</varos>
+            <gyartott_mennyiseg>120</gyartott_mennyiseg>
+        </gyar>
+    </gyarak>
+    <termekek>
+        <termek id="t1">
+            <nev>asztal</nev>
+            <gyartasikoltseg>120</gyartasikoltseg>
+            <meretosztaly>5</meretosztaly>
+        </termek>
+        <termek id="t2">
+            <nev>szek</nev>
+            <gyartasikoltseg>50</gyartasikoltseg>
+            <meretosztaly>2</meretosztaly>
+        </termek>
+    </termekek>
+    <boltok>    
+        <bolt id="bo1">
+            <varos>Miskolc</varos>
+            <uzletvezeto>Nagy Miklos</uzletvezeto>
+            <regisztalasdatuma>2018</regisztalasdatuma>
+        </bolt>
+    </boltok>
+    <k_besz_gyar>
+        <kapcsolat id="ka1">
+            <idbesz refID="be1"/>
+            <idgyar refID="gy1"/>
+            <alkatreszmennyiseg>2000</alkatreszmennyiseg>
+        </kapcsolat>
+        <kapcsolat id="ka2">
+            <idbesz refID="be1"/>
+            <idgyar refID="gy2"/>
+            <alkatreszmennyiseg>200</alkatreszmennyiseg>
+        </kapcsolat>
+    </k_besz_gyar>
+    <k_term_bolt>
+        <kapcsolat id="kb1">
+            <idterm refID="t1"/>
+            <idbolt refID="bo1"/>
+        </kapcsolat>
+    </k_term_bolt>
+</rendszer>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified"> 
+    <xs:element name="rendszer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="beszallitok" type="beszallitoktype" maxOccurs="1"/>
+                <xs:element name="gyarak" type="gyaraktype" maxOccurs="1"/>
+                <xs:element name="termekek" type="termekektype" maxOccurs="1"/>
+                <xs:element name="boltok" type="boltoktype" maxOccurs="1"/>
+                <xs:element name="k_besz_gyar" type="k_besz_gyartype" maxOccurs="1"/>
+                <xs:element name="k_term_bolt" type="k_term_bolttype" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="beszallitoktype">
+        <xs:sequence>
+            <xs:element name="beszallito" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev" type="xs:string"/>
+                        <xs:element name="email" type="xs:string"/>
+                        <xs:element name="telefonszam" type="xs:string"/>
+                        <xs:element name="cim" type="cimtype"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="cimtype">
+        <xs:sequence>
+            <xs:element name="orszag" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="gyaraktype">
+        <xs:sequence>
+            <xs:element name="gyar" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev" type="xs:string"/>
+                        <xs:element name="nagysag" type="xs:integer"/>
+                        <xs:element name="varos" type="xs:string"/>
+                        <xs:element name="gyartott_mennyiseg" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                    <xs:attribute name="t_id" type="xs:IDREF"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="termekektype">
+        <xs:sequence>
+            <xs:element name="termek" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev" type="xs:string"/>
+                        <xs:element name="gyartasikoltseg" type="xs:integer"/>
+                        <xs:element name="meretosztaly" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="boltoktype">
+        <xs:sequence>
+            <xs:element name="bolt" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="varos" type="xs:string"/>
+                        <xs:element name="uzletvezeto" type="xs:string" minOccurs="0"/>
+                        <xs:element name="regisztalasdatuma" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="k_besz_gyartype">
+        <xs:sequence>
+            <xs:element name="kapcsolat" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idbesz">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="idgyar">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="alkatreszmennyiseg" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="k_term_bolttype">
+        <xs:sequence>
+            <xs:element name="kapcsolat" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idterm">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="idbolt">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
