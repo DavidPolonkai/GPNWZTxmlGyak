@@ -47,7 +47,7 @@ public class DOMModifygpnwzt {
         this.in = new Scanner(System.in);
     }
 
-    //A destructor az adatok kiírását és a schema alapján történő validációt végzi 
+    // A destructor az adatok kiírását és a schema alapján történő validációt végzi
     public void destructor() throws TransformerException, SAXException, IOException {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         SchemaFactory factory = SchemaFactory.newInstance(language);
@@ -62,7 +62,8 @@ public class DOMModifygpnwzt {
         transformer.transform(domsource, result);
     }
 
-    //ez a függvény meg a módosítandó nodeot, ellenőrzi hogy lehetséges-e a módosítás és elvégzi
+    // ez a függvény meg a módosítandó nodeot, ellenőrzi hogy lehetséges-e a
+    // módosítás és elvégzi
     public void modify(String id) throws Exception {
         Node node = findIdInDoc(id);
         String name = node.getNodeName();
@@ -77,7 +78,7 @@ public class DOMModifygpnwzt {
         }
     }
 
-    //beolvassa az új adatot
+    // beolvassa az új adatot
     public String readModification(String nodename, String old) {
         System.out.print("Adja meg az új értéket (régi érték: " + old + "): ");
         String ret = in.nextLine();
@@ -106,11 +107,11 @@ public class DOMModifygpnwzt {
         throw new Exception("Az id vagy referencia nem létezik");
     }
 
-    //kilistázza a módosítható nodeokat bekéri az id-t és meghívja a módisítást
+    // kilistázza a módosítható nodeokat bekéri az id-t és meghívja a módosítást
     public void selector() throws Exception {
         new DOMReadgpnwzt().listForModify();
         System.out.println("Kérem válassza ki a módosítandó nodokat az id megadásával: ");
-        String choosen=this.in.nextLine();
+        String choosen = this.in.nextLine();
         modify(choosen);
     }
 }
