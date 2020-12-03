@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <meta charset="UTF-8">
+        <script>
+            (function(){
+            $.getJSON("/mnt/33B43DC17BD1F746/Work/5.halfyear/XML/GPNWZT_1203/PD_munkafajlok/JSONGPNWZT.json",function (json){
+                var items=[];
+
+                $.each(json,function(key,value){
+                    items.push("<p>"+value+"</p>");
+                    console.log("cucc"+items);
+                });
+            });
+            })();
+        </script>
+    </head>
+
+
+    <body>
+    <div id="id">
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+autok:
+  auto:
+    - "-rsz": ABC-100
+      tipus: Fiat
+      ar: '2200'
+      szin: piros
+      tulaj:
+        nev: Zoli
+        varos: Eger
+    - "-rsz": ABC-200
+      tipus: Opel
+      ar: '2300'
+      szin: piros
+      tulaj:
+        nev: Zoli
+        varos: Miskolc
+    - "-rsz": ABC-300
+      tipus: Skoda
+      ar: '2200'
+      szin: zöld
+      tulaj:
+        nev: Ákos
+        varos: Eger
+    - "-rsz": ABC-400
+      tipus: Suzuki
+      ar: '2600'
+      szin: sárga
+      tulaj:
+        nev: Misi
+        varos: Miskolc
